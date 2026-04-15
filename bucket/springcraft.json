@@ -6,7 +6,7 @@
   "license": "MIT",
   "url": "https://github.com/fmitesh007/springcraft-cli/releases/download/v0.3.0/springcraft-win.exe",
   "hash": "835ad4898b09af828bf7a1c4523038bd7999280c3b490d007f4fa7fb4994cd17",
-  "bin": "springcraft.exe",
+  "bin": ["springcraft-win.exe", "springcraft"],
   "checkver": {
     "github": "https://github.com/fmitesh007/springcraft-cli"
   },
@@ -15,8 +15,5 @@
     "hash": {
       "url": "$url.sha256.txt"
     }
-  },
-  "post_install": [
-    "Rename-Item -Path $dir\\springcraft-win.exe -NewName $dir\\springcraft.exe -Force"
-  ]
+  }
 }
